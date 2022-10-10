@@ -1,0 +1,322 @@
+/* 广告图样式开始 */
+.ad-img{
+  width: 100%;
+  height: 120px;
+  background: url('../images/3c6c452e61ff2891921110c296cad09a.jpg') center no-repeat;
+  background-size: auto 120px;
+}
+/* 广告图样式介绍 */
+/* 黑色导航条样式开始 */
+.black-nav{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #333;
+  position: relative;
+  z-index: 666;
+}
+.wrap{
+  width: 1226px;
+  margin: 0 auto;
+}
+.nav-left{
+  float: left;
+}
+.black-nav li{
+  float: left;
+}
+.black-nav a{
+  color: #b0b0b0;
+  font-size: 12px;
+}
+.black-nav span{
+  color: #424242;
+  font-size: 12px;
+  margin: 0 3.6px;
+}
+.black-nav a:hover{
+  color: #fff;
+}
+.nav-right{
+  float: right;
+}
+.cart{
+  width: 120px;
+  height: 40px;
+  background-color: #424242;
+  margin-left: 25px;
+  /* 设置光标 为小手*/
+  cursor: pointer;
+  position: relative;
+}
+.cart>a{
+  display: block;
+  width: 120px;
+  height: 40px;
+  position: relative;
+  z-index: 55;
+}
+.cart i{
+  margin-right: 4px;
+}
+.cart:hover{
+  background-color: #fff;
+}
+.cart:hover>a{
+  color: #ff6700;
+}
+/* 购物车定位 */
+.cart-list{
+  width: 316px;
+  /* 高度设置为0  如果不设置 默认高度由内容撑开 */
+  height: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,.15);
+  font-size: 12px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  transition: all .3s;
+  /* 隐藏购物车内的一行字 */
+  overflow: hidden;
+  z-index: 33;
+  
+}
+.cart:hover>.cart-list{
+  height: 100px;
+  line-height: 100px;
+}
+/* 下载APP定位 */
+.nav-left li{
+  position: relative;
+}
+.download{
+  width: 124px;
+  height: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 5px #aaa;
+  position: absolute;
+  top: 40px;
+  /* 和父元素水平居中  先移动父元素的一半  子元素再往回走自己宽度的一半 */
+  left: 50%;
+  margin-left: -62px;
+  /* 隐藏元素内容的图片和文本 */
+  overflow: hidden;
+  transition: all .3s;
+}
+.nav-left li:hover>.download{
+  height: 148px;
+}
+.download>img{
+  width: 90px;
+  margin: 18px 0 12px;
+}
+.download>p{
+  color: #333;
+  font-size: 14px;
+  line-height: 14px;
+}
+/* 三角形定位 */
+.sanjiao{
+  /* 绘制三角形时宽高设置为0  块级元素默认宽度为100% */
+  width: 0;
+  height: 0;
+  /* 绘制向上的三角形  需要下边框   两侧的边框设置为透明*/
+  border-bottom: 8px solid #fff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -8px;
+  display: none;
+}
+.nav-left li:hover>.sanjiao{
+  display: block;
+}
+/* 黑色导航条样式结束 */
+/* 白色导航样式开始 */
+.white-nav{
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  clear: both;
+  position: relative;
+}
+.logo{
+  width: 234px;
+  height: 100px;
+  float: left;
+}
+.nav-bar{
+  width: 696px;
+  height: 100px;
+  float: left;
+}
+.search{
+  width: 296px;
+  height: 100px;
+  float: left;
+  padding-top: 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+.logo-box{
+  width:55px;
+  height:55px;
+  margin-top: 22.5px;
+  position: relative;
+  overflow: hidden;
+}
+.logo-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .2s;
+}
+.home{
+  position: absolute;
+  top: 0;
+  left: -55px;
+  transition: all .2s;
+}
+.logo-box:hover .home{
+  left: 0;
+}
+.logo-box:hover .logo-img{
+  left: 55px;
+}
+.nav-bar>ul>li{
+  float: left;
+  padding: 38px 10px;
+  cursor: pointer;
+}
+.nav-bar a{
+  color: #333;
+}
+.nav-bar a:hover{
+  color: #ff6700;
+}
+/* 下拉列表开始 */
+.nav-list{
+  width:100%;
+  height:229px;
+  background-color: #fff;
+  border-top:1px solid #e0e0e0;
+  box-shadow: 0 3px 4px rgba(0,0,0,.18);
+  position: absolute;
+  left: 0;
+  top: 100px;
+  display: none;
+  z-index: 300;
+}
+.nav-bar li:hover>.nav-list{
+  display: block;
+}
+/* 下拉列表内容 */
+.nav-list li{
+  width: 204px;
+  height: 201px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  float: left;
+}
+.img-box{
+  width: 100%;
+  height: 110px;
+  border-right: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.nav-name{
+  color: #333;
+  font-size: 12px;
+  line-height: 20px;
+}
+.nav-price{
+  color: #ff6700;
+  font-size: 12px;
+  line-height: 20px;
+}
+.nav-list li:last-child .img-box{
+  border-right: none;
+}
+/* 搜索框 */
+.search input{
+  width: 244px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-right: none;
+  float: left;
+  /* 去掉input和button的外边框 */
+  outline: none;
+  transition: all .2s;
+}
+.search button{
+  width: 52px;
+  height: 50px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  float: left;
+  font-size: 24px;
+  color: #616161;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s;
+}
+/* 边框变为灰色 */
+.search input:hover,.search input:hover+button{
+  border-color: #b0b0b0;
+}
+/* 边框变为橘色 */
+.search input:focus,.search input:focus+button{
+  border-color: #ff6700;
+}
+.search button:hover{
+  background-color: #ff6700;
+  border-color: #ff6700;
+  color: #fff;
+}
+/* hot-words样式 */
+.hot-words{
+  width: 190px;
+  height: 21px;
+  position: absolute;
+  right: 62px;
+  top: 39.5px;
+}
+.hot-words>a{
+  display: inline-block;
+  margin-left: 5px;
+  padding: 0 5px;
+  font-size: 12px;
+  background-color: #eee;
+  color: #757575;
+  transition: all .2s;
+}
+.hot-words>a:hover{
+  background-color: #ff6700;
+  color: #fff;
+}
+.search input:focus~.hot-words{
+  display: none;
+}
+/* hot-list */
+.hot-list{
+  width: 245px;
+  height: 301px;
+  border: 1px solid #ff6700;
+  border-top: none;
+  box-sizing: border-box;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 75px;
+  display: none;
+}
+.search input:focus~.hot-list{
+  display: block;
+}
+/* 白色导航样式介绍 */
